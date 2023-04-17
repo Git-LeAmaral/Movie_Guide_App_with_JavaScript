@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#1c1917 50%, #ffb92a 50%);
+}
+
+.container {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 37.5rem;
+    padding: 3rem 1.8rem;
+    background-color: #1e293b;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6rem;
+    box-shadow: 1.2rem 2rem 3rem rgba(0, 0, 0, 0.6);
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2rem;
+}
+
+.search-container input,
+.search-container button {
+    font-size: 0.9rem;
+    outline: none;
+    border-radius: 0.3rem;
+}
+
+.search-container input {
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    color: #fff;
+    padding: 0.7rem;
+}
+
+.search-container input:focus {
+    border-color: #fff;
+}
+
+.search-container button {
+    background-color: #ffb92a;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    color: #fff;
+}
+
+.info {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin-top: 1.2rem;
+}
+
+.poster {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 0.6rem 0 0.9rem 0;
+}
+
+.rating img {
+    width: 1.2rem;
+}
+
+.rating h4 {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    font-size: 0.95rem;
+    gap: 1rem;
+    justify-content: center;
+    color: #a0a0a0;
+    margin: 0.6rem 0;
+    font-weight: 300;
+}
+
+.genre {
+    display: flex;
+    justify-content: space-around;
+}
+
+.genre div {
+    border: 1px solid #a0a0a0;
+    font-size: 0.75rem;
+    padding: 0.4rem 1.6rem;
+    border-radius: 0.4rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 500;
+    margin-top: 1.2rem;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    text-align: justify;
+    color: #a0a0a0;
+    margin-top: 1.2rem;
+}
+
+.msg {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+      .container {
+          font-size: 14px;
+      }
+
+      .poster {
+          margin: auto;
+          width: auto;
+          max-height: 10.8rem;
+      }
+
+      .info {
+          grid-template-columns: 1fr;
+      }
+}
